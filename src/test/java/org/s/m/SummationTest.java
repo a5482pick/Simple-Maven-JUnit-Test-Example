@@ -1,3 +1,6 @@
+package src.test.java.org.s.m;
+
+import src.main.java.org.s.m.*;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 

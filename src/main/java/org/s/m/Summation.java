@@ -1,3 +1,5 @@
+package src.main.java.org.s.m;
+
 public class Summation {
 
     public int evaluate(String expression) {
