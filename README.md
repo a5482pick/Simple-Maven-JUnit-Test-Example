@@ -1,4 +1,4 @@
-**_A simple example of testing with JUnit, using either Maven or the command line_**.  
+**_A simple example of testing with JUnit, using either Maven or the linux command line_**.  
 
 **_(Using Maven:)_**
 
@@ -9,11 +9,11 @@ will perform the test operation when issued from this new directory.&nbsp;
 
 To see 'failure' in action, change _assertEquals(10, total);_ in file _src/test/java/org/s/m/SummationTest.java_ to e.g. _assertEquals(9, total);_. &nbsp;  Why?  &nbsp;Because method _public int evaluate(String expression)_ in file _src/main/java/org/s/m/Summation.java_ returns 10 for "5+5", not 9.&nbsp;
 
-To avoid using _import src.main.java.org.s.m.*;_ in SummationTest.java, declare both Summation.java and SummationTest.java as being in the same package (or both of no package). &nbsp; 
+To avoid using _import src.main.java.org.s.m.*;_ in _SummationTest.java_, declare both _Summation.java_ and _SummationTest.java_ as being in the same package (or both of no package). &nbsp; 
 
 -----------------------
 
-**_To perform the test from the command line:_**
+**_(Using the command line:)_**
 
 1.  _javac src/main/java/org/s/m/Summation.java_
 2.  _javac -cp /home/USRNAME/Downloads/junit-4.12.jar:. src/test/java/org/s/m/SummationTest.java_
@@ -33,4 +33,4 @@ _java org.junit.runner.JUnitCore_
 ...this should list JUnit version, processing time and say 'OK'.
 
 
-When using the command line, the compiled classes are stored in the same directories as their source files. &nbsp; If you want to avoid requiring _import src.main.java.org.s.m.*;_ in SummationTest.java, put SummationTest.java in the same folder as Summation.java, and give both files the same package declaration.  &nbsp;Then adjust the paths in the terminal commands accordingly.
+When using the command line, the compiled classes are stored in the same directories as their source files. &nbsp; If you want to avoid requiring _import src.main.java.org.s.m.*;_ in _SummationTest.java_, put _SummationTest.java_ in the same folder as _Summation.java_, and give both files the same package declaration.  &nbsp;Then adjust the paths in the terminal commands accordingly.
