@@ -1,11 +1,15 @@
-A simple example of testing with JUnit, using either Maven or the command line.  &nbsp;Put pom.xml and 'src' directory in the same new directory.  &nbsp;The commands 
+**_A simple example of testing with JUnit, using either Maven or the command line_**.  
+
+**_(Using Maven:)_**
+
+Put pom.xml and 'src' directory in the same new directory.  &nbsp;The commands 
 1. _mvn clean install_ &nbsp;
 2. _mvn test_ &nbsp;
 will perform the test operation when issued from this new directory.&nbsp;
 
-To see 'failure' in action, change _assertEquals(10, total);_ in src/test/java/org/s/m/SummationTest.java to e.g. _assertEquals(9, total);_. &nbsp;  Why?  &nbsp;Because method _public int evaluate(String expression)_ in src/main/java/org/s/m/Summation.java returns 10 for "5+5", not 9.&nbsp;
+To see 'failure' in action, change _assertEquals(10, total);_ in file _src/test/java/org/s/m/SummationTest.java_ to e.g. _assertEquals(9, total);_. &nbsp;  Why?  &nbsp;Because method _public int evaluate(String expression)_ in file _src/main/java/org/s/m/Summation.java_ returns 10 for "5+5", not 9.&nbsp;
 
-To avoid using _import src.main.java.org.s.m.*;_ in SummationTest.java, declare both Summation and SummationTest as being in the same package (or both of no package). &nbsp; 
+To avoid using _import src.main.java.org.s.m.*;_ in SummationTest.java, declare both Summation.java and SummationTest.java as being in the same package (or both of no package). &nbsp; 
 
 -----------------------
 
@@ -18,13 +22,13 @@ To avoid using _import src.main.java.org.s.m.*;_ in SummationTest.java, declare 
 will perform compile and run when:
 
 1.  You are in the directory with pom.xml and the 'src' root.
-2.  The test file is located in src/test/java/org/s/m/SummationTest.java.
-3.  The tested file is located in src/main/java/org/s/m/Summation.java.
-4.  junit-4.12.jar and hamcrest-core-1.3.jar are in the Downloads folder.
+2.  The test file is located in _src/test/java/org/s/m/SummationTest.java_.
+3.  The tested file is located in _src/main/java/org/s/m/Summation.java_.
+4.  _junit-4.12.jar_ and _hamcrest-core-1.3.jar_ are in the Downloads folder.
 
-If you instead declare the 'jars' in CLASSPATH in e.g. .bashrc, you can check the classpath declaration with: 
+If you instead declare the 'jars' in CLASSPATH in e.g. _.bashrc_, you can check the classpath declaration with: 
 
-_java org.junit.runner.JUnitCore_.
+_java org.junit.runner.JUnitCore_
 
 ...this should list JUnit version, processing time and say 'OK'.
 
