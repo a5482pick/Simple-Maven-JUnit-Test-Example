@@ -15,6 +15,10 @@ To avoid using _import src.main.java.org.s.m.*;_ in _SummationTest.java_, declar
 
 **_(Using the command line:)_**
 
+(The following demonstrates the process for the relatively general situation of having the testing file and the tested file in different directories/packages...)
+
+The 3 commands:
+
 1.  _javac src/main/java/org/s/m/Summation.java_
 2.  _javac -cp /home/USRNAME/Downloads/junit-4.12.jar:. src/test/java/org/s/m/SummationTest.java_
 3.  _java -cp /home/USRNAME/Downloads/junit-4.12.jar:/home/USRNAME/Downloads/hamcrest-core-1.3.jar:. org.junit.runner.JUnitCore src.test.java.org.s.m.SummationTest_
