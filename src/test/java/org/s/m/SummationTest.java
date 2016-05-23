@@ -1,4 +1,4 @@
-package src.test.java.org.s.m;
+package src.test.java.org.s.m;  //Package org.s.m is sufficient when using Maven, not command line.
 
 import src.main.java.org.s.m.*;
 import static org.junit.Assert.assertEquals;

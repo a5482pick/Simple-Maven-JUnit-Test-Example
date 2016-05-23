@@ -1,4 +1,4 @@
-package src.main.java.org.s.m;
+package src.main.java.org.s.m;  //Package org.s.m is sufficient when using Maven, not command line.
 
 public class Summation {
 
