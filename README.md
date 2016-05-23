@@ -1,6 +1,8 @@
 **_A simple example of testing with JUnit, using either Maven or the linux command line_**.  
 
-**_(Using Maven:)_**
+**_(Using Maven:)_***
+
+*note:  Package _org.s.m_ can be used as the package in the class definitions when running the test with Maven.  &nbsp; However, the full package name _src.main.java.org.s.m_ is used because the test is required to run from the command line too.
 
 Put pom.xml and 'src' directory in the same new directory.  &nbsp;The commands 
 1. _mvn clean install_ &nbsp;
