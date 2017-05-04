@@ -19,6 +19,7 @@ To avoid using _import src.main.java.org.s.a.*;_ in _SummationTest.java_, declar
 
 (The following demonstrates the process for the relatively general situation of having the testing file and the tested file in different directories/packages...)
 
+**Method 1**
 The 3 commands:
 
 1.  _javac src/main/java/org/s/a/Summation.java_
@@ -32,11 +33,12 @@ will perform compile and run when:
 3.  The tested file is located in _src/main/java/org/s/a/Summation.java_.
 4.  _junit-4.12.jar_ and _hamcrest-core-1.3.jar_ are in the Downloads folder.
 
+**Method 2**
 If you instead declare the two 'jars' in CLASSPATH in e.g. _.bashrc_, you can check the classpath declaration with: 
 
 _java org.junit.runner.JUnitCore_
 
-...this should list JUnit version, processing time and say 'OK'.  The three commands will in this case simplify to:
+...this should list JUnit version, processing time and say 'OK'.  Those 3 commands will in this case simplify to:
 
 1.  _javac src/main/java/org/s/a/Summation.java_
 2.  _javac src/test/java/org/s/a/SummationTest.java_
