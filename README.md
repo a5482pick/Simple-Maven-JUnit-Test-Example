@@ -34,14 +34,15 @@ will perform compile and run when:
 4.  _junit-4.12.jar_ and _hamcrest-core-1.3.jar_ are in the Downloads folder.
 
 **Method 2**
-If you instead declare the two 'jars' in CLASSPATH in e.g. _.bashrc_, you can check the classpath declaration with: 
+If your directory structure is identical to that of 'Method 1' but the  two 'jars' are instead registered in CLASSPATH in e.g. _.bashrc_, you can first check the classpath declaration with: 
 
 _java org.junit.runner.JUnitCore_
 
-...this should list JUnit version, processing time and say 'OK'.  Those 3 commands will in this case simplify to:
+...this should list JUnit version, processing time and say 'OK'.  Those 3 commands of 'Method 1' will now in this case simplify to:
 
 1.  _javac src/main/java/org/s/a/Summation.java_
 2.  _javac src/test/java/org/s/a/SummationTest.java_
 3.  _java org.junit.runner.JUnitCore src.test.java.org.s.a.SummationTest_
 
+**Additional Note**
 When using the command line, the compiled classes are stored in the same directories as their source files. &nbsp; If you want to avoid requiring _import src.main.java.org.s.a.*;_ in _SummationTest.java_, put _SummationTest.java_ in the same folder as _Summation.java_, and give both files the same package declaration.  &nbsp;Then adjust the paths in the terminal commands accordingly.
